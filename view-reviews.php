@@ -14,8 +14,8 @@ while($review= $reviews->fetch_assoc()){
   ?>
   <tr>
     <td><?php echo $review['reviews_id']; ?></td>
-    <td><?php echo $book['review_title']; ?></td>
-    <td><?php echo $book['rating_id']; ?></td>
+    <td><?php echo $review['review_title']; ?></td>
+    <td><?php echo $review['rating_id']; ?></td>
   </tr>
   <?php
 }

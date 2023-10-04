@@ -4,7 +4,7 @@ require_once("model-reviews.php");
 
 $pageTitle ="Reviews";
 include "view-header.php";
-$books = selectReviews();
+$reviews = selectReviews();
 include "view-reviews.php";
 include "view-footer.php";
 ?>

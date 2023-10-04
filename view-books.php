@@ -7,6 +7,7 @@
       <th>Title</th>
       <th>Author</th>
       <th>Price</th>
+        <th></th>
         </tr>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@ while($book= $books->fetch_assoc()){
     <td><?php echo $book['book_title']; ?></td>
     <td><?php echo $book['book_author']; ?></td>
     <td><?php echo $book['book_price']; ?></td>
+    <td><a href="reviews-by-book.php?id=<?php echo $book['book_id']; ?>">Reviews</a></td>
   </tr>
   <?php
 }
